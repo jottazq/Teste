@@ -30,9 +30,6 @@
 
         <div class="logo">
 
-            <!-- Caso queira colocar uma imagem depois -->
-            <!-- <img src="images/logo.png" alt="Logo"> -->
-
             <div class="logo-text">
 
                 <h2>CHURRASCO</h2>
@@ -45,45 +42,21 @@
 
         <!-- MENU -->
 
-        <nav class="navbar">
+        <nav class="navbar" id="menu">
 
             <ul>
 
-                <li>
-                    <a class="active" href="index.html">
-                        Início
-                    </a>
-                </li>
+                <li><a class="active" href="index.html"><i class="fas fa-house"></i> Início</a></li>
 
-                <li>
-                    <a href="cardapio.html">
-                        Cardápio
-                    </a>
-                </li>
+                <li><a href="cardapio.html"><i class="fas fa-drumstick-bite"></i> Cardápio</a></li>
 
-                <li>
-                    <a href="galeria.html">
-                        Galeria
-                    </a>
-                </li>
+                <li><a href="galeria.html"><i class="fas fa-camera"></i> Galeria</a></li>
 
-                <li>
-                    <a href="sobre-nos.html">
-                        Sobre Nós
-                    </a>
-                </li>
+                <li><a href="sobre-nos.html"><i class="fas fa-user-tie"></i> Sobre Nós</a></li>
 
-                <li>
-                    <a href="localizacao.html">
-                        Localização
-                    </a>
-                </li>
+                <li><a href="localizacao.html"><i class="fas fa-location-dot"></i> Localização</a></li>
 
-                <li>
-                    <a href="contato.html">
-                        Contato
-                    </a>
-                </li>
+                <li><a href="contato.html"><i class="fas fa-phone"></i> Contato</a></li>
 
             </ul>
 
@@ -93,27 +66,19 @@
 
         <div class="social">
 
-            <a href="#">
-                <i class="fab fa-instagram"></i>
-            </a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
 
-            <a href="#">
-                <i class="fab fa-facebook-f"></i>
-            </a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
 
-            <a href="#">
-                <i class="fab fa-whatsapp"></i>
-            </a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
 
         </div>
 
         <!-- MENU MOBILE -->
 
-        <div class="menu-mobile">
-
+        <button class="menu-btn" onclick="toggleMenu()">
             <i class="fas fa-bars"></i>
-
-        </div>
+        </button>
 
     </div>
 
@@ -123,34 +88,25 @@
 
 <section class="hero">
 
-    <!-- Slides do Banner -->
+    <!-- Slides do Banner (deslizam para os lados) -->
 
     <div class="slider">
 
         <div class="slider-track">
 
             <div class="slide">
-
                 <div class="overlay"></div>
-
                 <img src="imagens/churrasco-misto.jpg" alt="Churrasco na brasa">
-
             </div>
 
             <div class="slide">
-
                 <div class="overlay"></div>
-
                 <img src="imagens/churrasco-misto.jpg" alt="Picanha grelhada">
-
             </div>
 
             <div class="slide">
-
                 <div class="overlay"></div>
-
                 <img src="imagens/churrasco-misto.jpg" alt="Espeto de carnes">
-
             </div>
 
         </div>
@@ -161,21 +117,13 @@
 
     <div class="hero-content">
 
-        <span class="subtitle">
-            DESDE 2026
-        </span>
+        <span class="subtitle">DESDE 2026</span>
 
-        <h1>
-            CHURRASCO<br>
-            DO BAIANO<br>
-            SEM MISÉRIA
-        </h1>
+        <h1>CHURRASCO<br>DO BAIANO<br>SEM MISÉRIA</h1>
 
-        <p>
-            O verdadeiro sabor do churrasco na brasa, com carnes
-            selecionadas, ambiente familiar e qualidade que faz a
-            diferença.
-        </p>
+        <p>Sabor, tradição e qualidade em cada corte. O verdadeiro
+        churrasco na brasa, com carnes selecionadas e ambiente
+        familiar em Duque de Caxias.</p>
 
         <div class="hero-buttons">
 
@@ -193,68 +141,47 @@
 
     <!-- Setas -->
 
-    <button class="arrow prev">
-
-        <i class="fas fa-chevron-left"></i>
-
-    </button>
-
-    <button class="arrow next">
-
-        <i class="fas fa-chevron-right"></i>
-
-    </button>
+    <button class="arrow prev"><i class="fas fa-chevron-left"></i></button>
+    <button class="arrow next"><i class="fas fa-chevron-right"></i></button>
 
     <!-- Indicadores -->
 
     <div class="indicators">
-
         <span class="dot active"></span>
-
         <span class="dot"></span>
-
         <span class="dot"></span>
-
     </div>
 
 </section>
 
-<!-- ===== FIM DO HERO ===== -->
-
 <!-- ================= DESTAQUES ================= -->
 
-<section class="highlights">
+<section class="destaques">
 
     <div class="container">
 
         <span class="section-subtitle">CONFIRA</span>
 
-        <h2 class="section-title">DESTAQUES</h2>
+        <h2 class="titulo">NOSSOS DESTAQUES</h2>
 
         <div class="cards">
 
             <div class="card">
-                <div class="icon"><i class="fas fa-star"></i></div>
-                <h3>MAIS VENDIDOS</h3>
-                <p>Nossos pratos mais pedidos</p>
+                <div class="icon"><i class="fas fa-drumstick-bite"></i></div>
+                <h3>Carnes Selecionadas</h3>
+                <p>Cortes especiais preparados na brasa.</p>
             </div>
 
             <div class="card">
-                <div class="icon"><i class="fas fa-tags"></i></div>
-                <h3>PROMOÇÕES</h3>
-                <p>Ofertas especiais para você</p>
+                <div class="icon"><i class="fas fa-martini-glass-citrus"></i></div>
+                <h3>Bebidas Geladas</h3>
+                <p>As melhores bebidas para acompanhar seu churrasco.</p>
             </div>
 
             <div class="card">
-                <div class="icon"><i class="fas fa-utensils"></i></div>
-                <h3>PRATO DO DIA</h3>
-                <p>Confira o prato especial de hoje</p>
-            </div>
-
-            <div class="card">
-                <div class="icon"><i class="fas fa-calendar-alt"></i></div>
-                <h3>EVENTOS</h3>
-                <p>Fique por dentro dos eventos</p>
+                <div class="icon"><i class="fas fa-people-roof"></i></div>
+                <h3>Ambiente Familiar</h3>
+                <p>Conforto e qualidade para toda a família.</p>
             </div>
 
         </div>
@@ -269,10 +196,8 @@
 
     <h2>Bora Comer?</h2>
 
-    <p>
-        Peça agora e receba o verdadeiro sabor do churrasco na brasa
-        direto na sua casa, ou venha nos visitar!
-    </p>
+    <p>Peça agora e receba o verdadeiro sabor do churrasco na brasa
+    direto na sua casa, ou venha nos visitar!</p>
 
     <a href="cardapio.html" class="btn btn-primary">VER CARDÁPIO</a>
 
@@ -282,43 +207,13 @@
 
 <footer>
 
-    <div class="container">
+    <div class="container footer-content">
 
-        <div class="footer-content">
+        <p><strong>Churrasco do Baiano Sem Miséria</strong></p>
 
-            <div class="footer-logo">
-                <h2>CHURRASCO</h2>
-                <span>DO BAIANO SEM MISÉRIA</span>
-                <p>
-                    O verdadeiro sabor do churrasco na brasa, com carnes
-                    selecionadas, ambiente familiar e qualidade que faz
-                    a diferença.
-                </p>
-            </div>
+        <p><i class="fas fa-location-dot"></i> Duque de Caxias - RJ</p>
 
-            <div class="footer-links">
-                <h3>Links</h3>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="cardapio.html">Cardápio</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="sobre-nos.html">Sobre Nós</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-contact">
-                <h3>Contato</h3>
-                <p><i class="fas fa-phone"></i> (00) 00000-0000</p>
-                <p><i class="fas fa-map-marker-alt"></i> Seu endereço aqui</p>
-                <p><i class="fas fa-clock"></i> Ter a Dom, 18h às 23h</p>
-            </div>
-
-        </div>
-
-        <div class="copyright">
-            &copy; 2026 Churrasco do Baiano Sem Miséria. Todos os direitos reservados.
-        </div>
+        <p class="copyright">&copy; 2026 Todos os direitos reservados.</p>
 
     </div>
 
