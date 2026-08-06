@@ -9,56 +9,111 @@
 
     <title>Churrasco do Baiano Sem Miséria</title>
 
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Fontes -->
+    <link rel="stylesheet" href="styles/style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- ================= NAVBAR ================= -->
 
 <header class="header">
 
-    <div class="logo">
-        <h2>CHURRASCO DO BAIANO</h2>
-        <span>SEM MISÉRIA</span>
-    </div>
+    <div class="container">
 
-    <nav>
+        <!-- LOGO -->
 
-        <ul class="menu">
+        <div class="logo">
 
-            <li><a class="active" href="index.html">Início</a></li>
+            <!-- Caso queira colocar uma imagem depois -->
+            <!-- <img src="images/logo.png" alt="Logo"> -->
 
-            <li><a href="cardapio.html">Cardápio</a></li>
+            <div class="logo-text">
 
-            <li><a href="galeria.html">Galeria</a></li>
+                <h2>CHURRASCO</h2>
 
-            <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                <span>DO BAIANO SEM MISÉRIA</span>
 
-            <li><a href="localizacao.html">Localização</a></li>
+            </div>
 
-            <li><a href="contato.html">Contato</a></li>
+        </div>
 
-        </ul>
+        <!-- MENU -->
 
-    </nav>
+        <nav class="navbar">
 
-    <div class="redes">
+            <ul>
 
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <li>
+                    <a class="active" href="index.html">
+                        Início
+                    </a>
+                </li>
 
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <li>
+                    <a href="cardapio.html">
+                        Cardápio
+                    </a>
+                </li>
 
-        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <li>
+                    <a href="galeria.html">
+                        Galeria
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sobre-nos.html">
+                        Sobre Nós
+                    </a>
+                </li>
+
+                <li>
+                    <a href="localizacao.html">
+                        Localização
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contato.html">
+                        Contato
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- REDES SOCIAIS -->
+
+        <div class="social">
+
+            <a href="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+        <!-- MENU MOBILE -->
+
+        <div class="menu-mobile">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
 
     </div>
 
@@ -67,187 +122,262 @@
 <!-- ================= HERO ================= -->
 
 <section class="hero">
+        <!-- Slides do Banner -->
 
-    <!-- Slides -->
+    <div class="slider">
 
-    <div class="slide active">
+        <div class="slide active">
 
-        <img src="imagens/churrasco-misto.jpg" alt="Banner 1">
+            <div class="overlay"></div>
 
-    </div>
+            <img src="images/banner1.jpg" alt="Churrasco">
 
-    <div class="slide">
+            <div class="hero-content">
 
-        <img src="imagens/churrasco-misto.jpg" alt="Banner 2">
+                <span class="subtitle">
+                    DESDE 2026
+                </span>
 
-    </div>
+                <h1>
+                    CHURRASCO<br>
+                    DO BAIANO<br>
+                    SEM MISÉRIA
+                </h1>
 
-    <div class="slide">
+                <p>
+                    O verdadeiro sabor do churrasco na brasa, com carnes
+                    selecionadas, ambiente familiar e qualidade que faz a
+                    diferença.
+                </p>
 
-        <img src="imagens/churrasco-misto.jpg" alt="Banner 3">
+                <a href="cardapio.html" class="btn">
+                    VER CARDÁPIO
+                </a>
 
-    </div>
+            </div>
 
-    <!-- Degradê -->
+        </div>
 
-    <div class="overlay"></div>
+        <div class="slide">
 
-    <!-- Conteúdo -->
+            <div class="overlay"></div>
 
-    <div class="hero-content">
+            <img src="images/banner2.jpg" alt="Picanha">
 
-        <p class="subtitulo">
+            <div class="hero-content">
 
-            SABOR • QUALIDADE • TRADIÇÃO
+                <span class="subtitle">
+                    CORTES ESPECIAIS
+                </span>
 
-        </p>
+                <h1>
+                    SABOR<br>
+                    QUE FAZ<br>
+                    A DIFERENÇA
+                </h1>
 
-        <h1>
+                <p>
+                    Carnes nobres preparadas com carinho para você e sua
+                    família desfrutarem de uma experiência inesquecível.
+                </p>
 
-            CHURRASCO DO BAIANO
-            <br>
-            SEM MISÉRIA
+                <a href="cardapio.html" class="btn">
+                    VER CARDÁPIO
+                </a>
 
-        </h1>
+            </div>
 
-        <p class="descricao">
+        </div>
 
-            Carnes selecionadas, ambiente familiar e aquele churrasco feito na brasa que conquista qualquer pessoa.
+        <div class="slide">
 
-        </p>
+            <div class="overlay"></div>
 
-        <a href="cardapio.html" class="btn-principal">
+            <img src="images/banner3.jpg" alt="Churrasco">
 
-            VER CARDÁPIO
+            <div class="hero-content">
 
-        </a>
+                <span class="subtitle">
+                    AMBIENTE FAMILIAR
+                </span>
+
+                <h1>
+                    TRADIÇÃO,<br>
+                    QUALIDADE E<br>
+                    MUITO SABOR
+                </h1>
+
+                <p>
+                    Venha conhecer a churrascaria que une atendimento,
+                    qualidade e aquele churrasco irresistível.
+                </p>
+
+                <a href="cardapio.html" class="btn">
+                    VER CARDÁPIO
+                </a>
+
+            </div>
+
+        </div>
 
     </div>
 
     <!-- Setas -->
 
-    <button class="prev">
+    <button class="arrow prev">
 
-        <i class="fa-solid fa-chevron-left"></i>
-
-    </button>
-
-    <button class="next">
-
-        <i class="fa-solid fa-chevron-right"></i>
+        <i class="fas fa-chevron-left"></i>
 
     </button>
 
-</section>
+    <button class="arrow next">
 
-<!-- ================= DESTAQUES ================= -->
+        <i class="fas fa-chevron-right"></i>
 
-<section class="destaques">
+    </button>
 
-    <h2>
+    <!-- Indicadores -->
 
-        NOSSOS DESTAQUES
+    <div class="indicators">
 
-    </h2>
+        <span class="dot active"></span>
 
-    <div class="cards">
+        <span class="dot"></span>
 
-        <div class="card">
-
-            <div class="icone">
-
-                🥩
-
-            </div>
-
-            <h3>Carnes Selecionadas</h3>
-
-            <p>
-
-                Cortes especiais preparados diariamente na brasa.
-
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <div class="icone">
-
-                🥤
-
-            </div>
-
-            <h3>Bebidas Geladas</h3>
-
-            <p>
-
-                Refrigerantes, sucos e bebidas sempre geladas.
-
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <div class="icone">
-
-                👨‍👩‍👧‍👦
-
-            </div>
-
-            <h3>Ambiente Familiar</h3>
-
-            <p>
-
-                Um lugar agradável para reunir amigos e família.
-
-            </p>
-
-        </div>
+        <span class="dot"></span>
 
     </div>
 
 </section>
 
-<!-- ================= RODAPÉ ================= -->
+<!-- ===== FIM DO HERO ===== -->
 
-<footer>
+        <!-- Slides do Banner -->
 
-    <h2>
+    <div class="slider">
 
-        CHURRASCO DO BAIANO SEM MISÉRIA
+        <div class="slide active">
 
-    </h2>
+            <div class="overlay"></div>
 
-    <p>
+            <img src="images/banner1.jpg" alt="Churrasco">
 
-        <i class="fa-solid fa-location-dot"></i>
+            <div class="hero-content">
 
-        Duque de Caxias - RJ
+                <span class="subtitle">
+                    DESDE 2026
+                </span>
 
-    </p>
+                <h1>
+                    CHURRASCO<br>
+                    DO BAIANO<br>
+                    SEM MISÉRIA
+                </h1>
 
-    <p>
+                <p>
+                    O verdadeiro sabor do churrasco na brasa, com carnes
+                    selecionadas, ambiente familiar e qualidade que faz a
+                    diferença.
+                </p>
 
-        <i class="fa-solid fa-phone"></i>
+                <a href="cardapio.html" class="btn">
+                    VER CARDÁPIO
+                </a>
 
-        (21) 99999-9999
+            </div>
 
-    </p>
+        </div>
 
-    <p>
+        <div class="slide">
 
-        © 2026 Todos os direitos reservados.
+            <div class="overlay"></div>
 
-    </p>
+            <img src="images/banner2.jpg" alt="Picanha">
 
-</footer>
+            <div class="hero-content">
 
-<!-- JavaScript -->
+                <span class="subtitle">
+                    CORTES ESPECIAIS
+                </span>
 
-<script src="scriptAni.js"></script>
+                <h1>
+                    SABOR<br>
+                    QUE FAZ<br>
+                    A DIFERENÇA
+                </h1>
 
-</body>
+                <p>
+                    Carnes nobres preparadas com carinho para você e sua
+                    família desfrutarem de uma experiência inesquecível.
+                </p>
 
-  </html>
+                <a href="cardapio.html" class="btn">
+                    VER CARDÁPIO
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="slide">
+
+            <div class="overlay"></div>
+
+            <img src="images/banner3.jpg" alt="Churrasco">
+
+            <div class="hero-content">
+
+                <span class="subtitle">
+                    AMBIENTE FAMILIAR
+                </span>
+
+                <h1>
+                    TRADIÇÃO,<br>
+                    QUALIDADE E<br>
+                    MUITO SABOR
+                </h1>
+
+                <p>
+                    Venha conhecer a churrascaria que une atendimento,
+                    qualidade e aquele churrasco irresistível.
+                </p>
+
+                <a href="cardapio.html" class="btn">
+                    VER CARDÁPIO
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Setas -->
+
+    <button class="arrow prev">
+
+        <i class="fas fa-chevron-left"></i>
+
+    </button>
+
+    <button class="arrow next">
+
+        <i class="fas fa-chevron-right"></i>
+
+    </button>
+
+    <!-- Indicadores -->
+
+    <div class="indicators">
+
+        <span class="dot active"></span>
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+    </div>
+
+</section>
+
+<!-- ===== FIM DO HERO ===== -->
