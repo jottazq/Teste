@@ -1,4 +1,12 @@
 // ==========================
+// MENU MOBILE
+// ==========================
+
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("show");
+}
+
+// ==========================
 // CARROSSEL DE IMAGENS (desliza para os lados)
 // ==========================
 
@@ -12,9 +20,7 @@ const total = slides.length;
 let indice = 0;
 let intervalo;
 
-// ==========================
 // Mostrar Slide
-// ==========================
 
 function mostrarSlide(n){
 
@@ -24,9 +30,7 @@ function mostrarSlide(n){
     dots[n].classList.add("active");
 }
 
-// ==========================
 // Próximo Slide
-// ==========================
 
 function proximoSlide(){
 
@@ -34,9 +38,7 @@ function proximoSlide(){
     mostrarSlide(indice);
 }
 
-// ==========================
 // Slide Anterior
-// ==========================
 
 function slideAnterior(){
 
@@ -44,9 +46,7 @@ function slideAnterior(){
     mostrarSlide(indice);
 }
 
-// ==========================
 // Iniciar Carrossel
-// ==========================
 
 function iniciarCarrossel(){
 
@@ -55,9 +55,7 @@ function iniciarCarrossel(){
     }, 5000);
 }
 
-// ==========================
 // Reiniciar Tempo
-// ==========================
 
 function reiniciar(){
 
@@ -65,27 +63,21 @@ function reiniciar(){
     iniciarCarrossel();
 }
 
-// ==========================
 // Botão Direita
-// ==========================
 
 next.addEventListener("click", () => {
     proximoSlide();
     reiniciar();
 });
 
-// ==========================
 // Botão Esquerda
-// ==========================
 
 prev.addEventListener("click", () => {
     slideAnterior();
     reiniciar();
 });
 
-// ==========================
 // Clique nos indicadores
-// ==========================
 
 dots.forEach((dot, i) => {
     dot.addEventListener("click", () => {
@@ -95,22 +87,7 @@ dots.forEach((dot, i) => {
     });
 });
 
-// ==========================
-// Menu mobile
-// ==========================
-
-const menuMobile = document.querySelector(".menu-mobile");
-const navbar = document.querySelector(".navbar");
-
-if (menuMobile){
-    menuMobile.addEventListener("click", () => {
-        navbar.classList.toggle("show");
-    });
-}
-
-// ==========================
 // Inicialização
-// ==========================
 
 mostrarSlide(indice);
 iniciarCarrossel();
