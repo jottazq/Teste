@@ -173,6 +173,27 @@ ul{
     color:#ffdd44;
 }
 
+@media(max-width:1250px){
+
+    .navbar ul{
+        gap:18px;
+    }
+
+    .navbar a{
+        font-size:14px;
+    }
+
+    .social{
+        gap:8px;
+    }
+
+    .social a{
+        width:36px;
+        height:36px;
+        font-size:14px;
+    }
+}
+
 @media(max-width:1000px){
 
     .navbar{
@@ -582,6 +603,13 @@ footer{
 /* ==========================================
    RESPONSIVIDADE
 ========================================== */
+
+@media(max-width:1000px){
+
+    .hero-content{ width:60%; }
+
+    .hero-content h1{ font-size:4rem; }
+}
 
 @media(max-width:768px){
 
