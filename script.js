@@ -1,19 +1,16 @@
-
-
 // ==========================
-// CARROSSEL DE IMAGENS
+// CARROSSEL DE IMAGENS (desliza para os lados)
 // ==========================
 
+const track = document.querySelector(".slider-track");
 const slides = document.querySelectorAll(".slide");
-
+const dots = document.querySelectorAll(".dot");
 const next = document.querySelector(".next");
-
 const prev = document.querySelector(".prev");
 
+const total = slides.length;
 let indice = 0;
-
 let intervalo;
-
 
 // ==========================
 // Mostrar Slide
@@ -21,16 +18,11 @@ let intervalo;
 
 function mostrarSlide(n){
 
-    slides.forEach((slide)=>{
+    track.style.transform = `translateX(-${n * (100 / total)}%)`;
 
-        slide.classList.remove("active");
-
-    });
-
-    slides[n].classList.add("active");
-
+    dots.forEach((dot) => dot.classList.remove("active"));
+    dots[n].classList.add("active");
 }
-
 
 // ==========================
 // Próximo Slide
@@ -38,18 +30,9 @@ function mostrarSlide(n){
 
 function proximoSlide(){
 
-    indice++;
-
-    if(indice >= slides.length){
-
-        indice = 0;
-
-    }
-
+    indice = (indice + 1) % total;
     mostrarSlide(indice);
-
 }
-
 
 // ==========================
 // Slide Anterior
@@ -57,18 +40,9 @@ function proximoSlide(){
 
 function slideAnterior(){
 
-    indice--;
-
-    if(indice < 0){
-
-        indice = slides.length - 1;
-
-    }
-
+    indice = (indice - 1 + total) % total;
     mostrarSlide(indice);
-
 }
-
 
 // ==========================
 // Iniciar Carrossel
@@ -77,13 +51,9 @@ function slideAnterior(){
 function iniciarCarrossel(){
 
     intervalo = setInterval(() => {
-
         proximoSlide();
-
-    },5000);
-
+    }, 5000);
 }
-
 
 // ==========================
 // Reiniciar Tempo
@@ -92,42 +62,55 @@ function iniciarCarrossel(){
 function reiniciar(){
 
     clearInterval(intervalo);
-
     iniciarCarrossel();
-
 }
-
 
 // ==========================
 // Botão Direita
 // ==========================
 
-next.addEventListener("click",()=>{
-
+next.addEventListener("click", () => {
     proximoSlide();
-
     reiniciar();
-
 });
-
 
 // ==========================
 // Botão Esquerda
 // ==========================
 
-prev.addEventListener("click",()=>{
-
+prev.addEventListener("click", () => {
     slideAnterior();
-
     reiniciar();
-
 });
 
+// ==========================
+// Clique nos indicadores
+// ==========================
+
+dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+        indice = i;
+        mostrarSlide(indice);
+        reiniciar();
+    });
+});
+
+// ==========================
+// Menu mobile
+// ==========================
+
+const menuMobile = document.querySelector(".menu-mobile");
+const navbar = document.querySelector(".navbar");
+
+if (menuMobile){
+    menuMobile.addEventListener("click", () => {
+        navbar.classList.toggle("show");
+    });
+}
 
 // ==========================
 // Inicialização
 // ==========================
 
 mostrarSlide(indice);
-
 iniciarCarrossel();
